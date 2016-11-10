@@ -29,8 +29,8 @@ public class BufferDemo {
 			tmp=bReader.readLine();
 			
 		}
-		in.close();
-		writer.close();
+		//in.close();
+		//writer.close();
 		bReader.close();
 		bWriter.close();
 		System.out.println("文件完成复制");
