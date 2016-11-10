@@ -1,4 +1,4 @@
-package pers.shaofeng.example;
+package pers.shaofeng.example.demo_20;
 
 public class TheChicken {
 
