@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+.div1{
+	font-size:xx-large;
+	font-family:楷书;
+	text-align:center;
+	width:600px;
+	height:400px;
+	background-color:blue;
+	margin:10px 50px 30px 20px;
+}

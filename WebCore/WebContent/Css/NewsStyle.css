@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+
+h1 {
+	font-famliy: 楷体;
+	font-style: italic;
+	color: red;
+}
+
+p {
+	color: red;
+}
+
+h3 {
+	color: red;
+}
+
+dt, dd {
+	color: blue;
+}
+
+div {
+	width: 400px;
+	height: 130px;
+	text-align: left;
+}
+
+ol, ul li {
+	font-famliy: 小篆;
+	font-style: oblique;
+	text-decoration: underline;
+	color: blue;
+}
+
+/* }
+ul li {
+	font-famliy:宋体;
+	font-style:normal;
+
+} */
+.fontvariant {
+	font-variant: small-caps;
+}
+
+#texttransform {
+	text-transform: capitalize;
+}
+
+.texttransformup {
+	text-transform: uppercase;
+}
+
+#texttransformlow {
+	text-transform: lowercase;
+}
+
+body {
+	background-color: green;
+	text-align: left;
+}
+
+.backgroundimage {
+	background-image:
+		url("http://desk.fd.zol-img.com.cn/t_s960x600c5/g3/M01/0B/00/Cg-4WFRhhXWIEL0kAAdOid5tvlYAARJHAFfhp4AB06h570.jpg");
+}
+
+.backgroundrepeat {
+	background-repeat: no-repeat;
+}
