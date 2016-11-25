@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="WebCore">
+    <wb-module deploy-name="WebCoreOwn">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="WebCore"/>
-        <property name="java-output-path" value="/WebCore/build/classes"/>
+        <property name="java-output-path" value="/WebCoreOwn/build/classes"/>
+        <property name="context-root" value="WebCoreOwn"/>
     </wb-module>
 </project-modules>

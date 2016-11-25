@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+/* 定义了函数changeImage */
+function changeImage(){
+/* 	得到被标记为myiamge的元素，然后通过String方法match查找含有bulbon字符串的图片 */
+document.getElementById("myimage").match("bulbon");
+}
+</script>
+<!-- 定义图片的路径src，图片的id为myimage，当点击图片（onclick）时调用方法changeImage -->
+<img src="../../Images/112.jpg" id="myimage" onclick="changeImage">
+</body>
+</html>

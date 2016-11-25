@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ForInDemo</title>
+<script type="text/javascript">
+function forin() {
+	var myObject = new Array();
+	myObject.name="张三";
+	myObject.age="23";
+	myObject.phone="110";
+	for ( prop in myObject) {
+		window.alert("The property"+prop+"is"+myObject[prop]);
+		
+	}
+	
+}
+</script>
+</head>
+<body>
+<input type="button" value="forin" onclick="forin()" >
+</body>
+</html>
