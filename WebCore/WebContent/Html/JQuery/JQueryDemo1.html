@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Demo1</title>
+<script type="text/javascript"
+	src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+	<div>这是一个块</div>
+	<script type="text/javascript">
+		$("div").css("border", "1px solid red");//将div标签边框改为1px红色
+	</script>
+	<div id="form">div的内容</div>
+	<div id="to"></div>
+	<script type="text/javascript">
+		$("#to").html($("#form").html());
+	</script>
+	<ul>
+		<li class="fruit">Apple</li>
+		<li>Tomato</li>
+		<li class="fruit">Banana</li>
+		<li>Potato</li>
+		<li class="fruit">Orange</li>
+
+	</ul>
+	<hr />
+	<script type="text/javascript">
+		//$(".fruit").css("color", "red");//将标记为fruit的class标签内容该我红色
+	</script>
+	<ul>
+		<li class="fruit">Apple</li>
+		<li id="tomato">Tomato</li>
+		<li class="fruit">Banana</li>
+		<li>Potato</li>
+		<li class="fruit">Orange</li>
+
+	</ul>
+	<hr />
+	<script type="text/javascript">
+		//$(".fruit,#tomato").css("color", "red");//将标记为fruit的class标签内容和标记为tomato的id标签内容该我红色
+		console.log($("*"));
+	</script>
+	<div>
+		祖先元素
+		<p>
+			<label>孙元素</label> <span><label>后代元素</label></span>
+		</p>
+		<br /> <label>子元素</label> <label>子元素1</label>
+		<hr />
+		<label>子元素2</label> <label>子元素3</label>
+	</div>
+	<script type="text/javascript">
+		//$("div span").css("color", "red");//祖先后代选择器
+		//$("div>label").css("color", "red");//父子选择器
+		//$("p+label").css("color", "red");//隔壁选择器
+		//$("p~label").css("color", "red");//邻居选择器
+	</script>
+	<hr />
+	<ul id="sceond">
+		<li>Apple</li>
+		<li>Tomato</li>
+		<li>Banana</li>
+		<li>Potato</li>
+		<li>Orange</li>
+		<li><p>
+				pear<span></span>
+			</p></li>
+	</ul>
+	<span>pear1
+		<p></p>
+	</span>
+	<br />
+	<ul>
+		<li class="lf">Apple</li>
+		<li class="lf">Tomato</li>
+		<li class="lf">Banana</li>
+		<li class="lf">Potato</li>
+		<li class="lf">Orange</li>
+
+	</ul>
+	<br/>
+	<script type="text/javascript">
+	 //被标记为id为sceond的ul标签下的第一个li改为黄色和li标签的最后一个改为蓝色
+		//$("#sceond li:first").css("color", "yellow");
+	$("ul .lf:first").css("color", "yellow");//将ul下li标签为lf的改为黄色
+		$("li:last").css("color", "blue");
+	</script>
+
+
+<!-- 		<script type="text/javascript">
+	//所有li标签的第一个改为蓝色和最后一个改为浅蓝色
+$("li:first-child").css("color", "blue");
+$("li:last-child").css("color", "lightblue");
+</script> -->
+
+
+	<!-- 	<script type="text/javascript">
+	//所有li标签下标为2和7改变为蓝色
+		$("li:eq(2)").css("color", "blue");
+		$("li:eq(7)").css("color", "blue");
+	</script>
+ -->
+	<!-- 	<script type="text/javascript">
+	//li标签下包含at的改为红色
+$("li:contains(at)").css("color", "red");
+</script> -->
+
+	<!-- <script type="text/javascript">
+	//包含span的p标签改为红色
+		$("p:has(span)").css("color", "red");
+		//$("span:has(p)").css("color", "red");
+	</script> -->
+	
+	<!-- <p style="display: none;">我是隐藏的</p>
+	<p style="display: none;">我也是隐藏的</p>
+	<script type="text/javascript">
+	//将隐藏的p标签显现出来
+	$("p:hidden").show();
+	</script> -->
+	
+	<p >我是显示的</p>
+	<p >我也是显示的</p>
+	<script type="text/javascript">
+	//将显现的p标签隐藏起来
+	$("p:visible").hide();
+	</script>
+	
+	<input id="ipt" type="text" class="cls_ipt">
+	<script type="text/javascript">
+	//$("input[id=ipt]").val("hello");
+	$("input[class=cls_ipt]").val("world");
+	</script>
+</body>
+</html>
