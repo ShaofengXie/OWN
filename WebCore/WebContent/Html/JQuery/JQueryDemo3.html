@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQueryDemo</title>
+<script type="text/javascript"
+	src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+	function hideDemo() {
+		$("p").hide("slow", function() {
+			alert("隐藏成功！");
+		});
+
+	}
+</script>
+</head>
+<body>
+	<p>Hello</p>
+	<hr />
+	<input type="button" value="hide" onclick="hideDemo()">
+
+</body>
+</html>

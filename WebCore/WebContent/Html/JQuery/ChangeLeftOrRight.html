@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+function right(){
+	$("div").animate({left:"-=100px"},3000);
+}
+</script>
+</head>
+<body>
+	<div
+		style="position: relative; width: 24px; height: 32px; border: 1px solid red;"></div>
+	<button type="button">向右</button>
+	<script type="text/javascript">
+		$("button").bind("click", function() {
+			$("div").animate({
+				left : "+=100px"
+			}, 3000,right);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"
+	
+	src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+	function s() {		
+		$("div").toggle(3000, function() {
+		if ($("div").css("dispaly")=="none") {
+			$("input").attr("value","显示" );
+			
+		}else{
+			$("input").attr("value","隐藏" );
+		}
+				});
+		
+	}
+	</script>
+	
+</head>
+<body>
+	<div style="width: 48px; height: 64px; background: red;display: none;"></div>
+	<input type="button" value="显示" >
+	
+</body>
+</html>

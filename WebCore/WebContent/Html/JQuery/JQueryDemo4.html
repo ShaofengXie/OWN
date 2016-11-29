@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<form id="my_form" action="too.php"></form>
+<script type="text/javascript">
+	console.log($("#my_form").attr("action"));
+	$("#my_form").attr("action","bar.php")
+	console.log($("#my_form").attr("action"));
+
+	</script>
+</body>
+</html>
